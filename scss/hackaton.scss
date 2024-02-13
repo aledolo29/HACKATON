@@ -1,0 +1,113 @@
+.main {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.diagonal-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #082243; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #082243
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #082243
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// creates randomized star sizes
+@function stars($n) {
+  $value: "#{random(4000)}px #{random(4000)}px #767676";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(4000)}px #{random(4000)}px #767676";
+  }
+  @return unquote($value);
+}
+
+// store random stars
+$stars-small: stars(1600);
+$stars-medium: stars(800);
+$stars-big: stars(500);
+
+.stars {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.stars > .small {
+  width: 1.5px;
+  height: 1.5px;
+  background: transparent;
+  box-shadow: $stars-small;
+  animation: starsAnimation 50s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 5000px;
+    width: 1.5px;
+    height: 1.5px;
+    background: transparent;
+    box-shadow: $stars-small;
+  }
+}
+
+.stars > .medium {
+  width: 2.5px;
+  height: 2.5px;
+  background: transparent;
+  box-shadow: $stars-medium;
+  animation: starsAnimation 100s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 5000px;
+    width: 2.5px;
+    height: 2.5px;
+    background: transparent;
+    box-shadow: $stars-medium;
+  }
+}
+
+.stars > .big {
+  width: 3.5px;
+  height: 3.5px;
+  background: transparent;
+  box-shadow: $stars-big;
+  border-radius: 100%;
+  animation: starsAnimation 150s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 5000px;
+    width: 3.5px;
+    height: 3.5px;
+    background: transparent;
+    box-shadow: $stars-big;
+    border-radius: 100%;
+  }
+}
+
+// swap from/to values to reverse animation
+@keyframes starsAnimation {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

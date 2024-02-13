@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/my_styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/hackaton.css" type="text/css" />
+    <link rel="stylesheet" href="css/font/bootstrap-icons.css" />
+    <title>Galería</title>
+  </head>
+  <body class="position-relative">
+    <!-- BARRA NAVEGACIÓN -->
+    <nav class="barra navbar navbar-expand-xl bg-primary sticky-top">
+      <div class="container-fluid g-3">
+        <div class="d-flex mx-3">
+          <h1 class="navbar-brand fs-1 text-light" href="#">
+            HACKATON &nbsp;&nbsp;INTERCENTROS &nbsp;&nbsp;UTRERA
+          </h1>
+          <img
+            src="img/juntaAndalucia_s.jpg"
+            alt=""
+            class="img-fluid rounded-1 juntaAndalucia mx-2"
+          />
+        </div>
+        <button
+          class="navbar-toggler m-3 border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul
+            class="navbar-nav d-flex justify-content-evenly text-center container-xl"
+          >
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                aria-current="page"
+                href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="index.html?#consiste"
+                >¿En qué consiste?</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="index.html?#fases"
+                >Fases</a
+              >
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="faqs.html"
+                >FAQS</a
+              >
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="index.html?#informacion"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- GALERIA -->
+    <section class="d-flex justify-content-center">
+      <main class="main container-xl text-center m-5">
+        <h1
+          class="mt-5 text-center text-warning display-1 z-2 position-relative"
+        >
+          GALERÍA
+        </h1>
+        <!-- FILA 1 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_125116_s_s"
+            >
+              <img
+                src="img/IMG_20220216_125116_s_s.jpg"
+                alt="galeria 1"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_193942_s_s"
+            >
+              <img
+                src="img/IMG_20220216_193942_s_s.jpg"
+                alt="galeria 2"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG-20230419-WA0041_s_s"
+            >
+              <img
+                src="img/IMG-20230419-WA0041_s_s.jpg"
+                alt="galeria 3"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG-20230420-WA0004_s_s"
+            >
+              <img
+                src="img/IMG-20230420-WA0004_s_s.jpg"
+                alt="galeria 6"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- FILA 2 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG-20230419-WA0051_s_s"
+            >
+              <img
+                src="img/IMG-20230419-WA0051_s_s.jpg"
+                alt="galeria 4"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG-20230419-WA0070_s_s"
+            >
+              <img
+                src="img/IMG-20230419-WA0070_s_s.jpg"
+                alt="galeria 5"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_161732_s_s"
+            >
+              <img
+                src="img/IMG_20220216_161732_s_s.jpg"
+                alt="galeria 6"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_102144_s_s"
+            >
+              <img
+                src="img/IMG_20220216_102144_s_s.jpg"
+                alt="galeria 6"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- FILA 3 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_125449_s_s"
+            >
+              <img
+                src="img/IMG_20220216_125449_s_s.jpg"
+                alt="galeria 7"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_124736_s_s"
+            >
+              <img
+                src="img/IMG_20220216_124736_s_s.jpg"
+                alt="galeria 8"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_193941_s_s"
+            >
+              <img
+                src="img/IMG_20220216_193941_s_s.jpg"
+                alt="galeria 9"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3 mt-3">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#modal-imagen"
+              data-bs-imagen="IMG_20220216_163518_s_s"
+            >
+              <img
+                src="img/IMG_20220216_163518_s_s.jpg"
+                alt="galeria 6"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+      </main>
+      <!-- modal -->
+      <div class="modal fade" id="modal-imagen">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- cuerpo del modal -->
+            <div class="modal-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fondo estrellas -->
+    <div class="diagonal-hero-bg">
+      <div class="stars">
+        <div class="small"></div>
+        <div class="medium"></div>
+        <div class="big"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid bg-white">
+          <div class="row d-flex justify-content-center p-3">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/inicia.webp" alt="inicia" class="img-fluid w-50" />
+            </div>
+          </div>
+          <hr class="text-black" />
+          <div class="row p-3">
+            <h3 class="fw-bold display-3 text-center text-black">
+              Organización y Gestión:
+            </h3>
+            <div
+              class="col-md-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/Logo Nueva Consejeria CADE.jpg"
+                alt="junta"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="col-md-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="img/ORGANIZAN AYTO 1.jpeg"
+                alt="junta"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="col-md-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/ORGANIZAN IES 3.jpg" alt="junta" class="img-fluid" />
+            </div>
+            <div
+              class="col-md-3 d-flex justify-content-center align-items-center"
+            >
+              <img src="img/GESTIONAN CADE 1.jpg" alt="junta" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row m-3 p-3">
+            <div
+              class="col-md-7 d-flex justify-content-center align-items-center"
+            >
+              <h3 class="fw-bold display-3 text-center text-black">
+                Participantes:
+              </h3>
+            </div>
+            <div
+              class="col-md-5 d-flex justify-content-center align-items-center"
+            >
+              <h3
+                class="fw-bold display-3 text-center text-black d-none d-md-inline-block"
+              >
+                Colaboran:
+              </h3>
+            </div>
+          </div>
+          <div class="row p-3">
+            <div class="col-6 col-md-2">
+              <img
+                src="img/LOGO PONCE ORGANIZA.png"
+                alt="ponce"
+                class="img-fluid w-50"
+              />
+            </div>
+            <div class="col-6 col-md-2">
+              <img
+                src="img/SMX_Utrera.png"
+                alt="salesianos"
+                class="img-fluid w-75"
+              />
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="img/ruiz.png" alt="ruiz" class="img-fluid w-75" />
+            </div>
+            <div class="col-6 col-md-2">
+              <img
+                src="img/virgen_consolacion.png"
+                alt="virgen_consolacion"
+                class="img-fluid w-50"
+              />
+            </div>
+            <h3
+              class="fw-bold display-3 text-center text-black d-md-none d-inline-block"
+            >
+              Colaboran:
+            </h3>
+  
+            <div class="col-6 col-md-2">
+              <img
+                src="img/COLABORAN_DIEGO_1-removebg-preview.png"
+                alt="DIEGO"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-2">
+              <img
+                src="img/COLABORAN_MOCAIBO_2-removebg-preview.png"
+                alt="MOCAIBO"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-white bg-primary p-4 z-1 position-relative">
+          <h3 class="fs-2 p-0">
+            Web realizada por alumnado del CFGS "DAW" del IES Ruiz Gijón. 2024
+          </h3>
+        </div>
+      </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Monoton";
+  src: url(../fonts/Monoton-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Fredoka";
+  src: url(../fonts/Fredoka-Regular.ttf);
+}
+@font-face {
+  font-family: "Fredoka-Medium";
+  src: url(../fonts/Fredoka-Medium.ttf);
+}
+
+:root {
+  --bs-blue: #082243;
+}
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+}
+body {
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: var(--bs-blue);
+  font-family: "Fredoka";
+}
+.juntaAndalucia {
+  width: 40px;
+  height: 40px;
+}
+.text-primary {
+  color: var(--bs-blue) !important;
+}
+.bg-primary {
+  background-color: var(--bs-blue) !important;
+}
+h1 {
+  font-family: "Monoton", sans-serif;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-family: "Fredoka-Medium";
+}
+.button--opacity {
+  transition: font-size 0.7s;
+}
+.button--opacity::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  background-color: white;
+  width: 100%;
+  height: 3px;
+  /* clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); */
+  clip-path: circle(0 at center);
+  transition: clip-path 0.7s;
+}
+.button--opacity:hover::after {
+  clip-path: circle(100% at center);
+}
+.button--opacity:hover {
+  font-size: 2rem;
+}
+
+/* header */
+.titulo {
+  font-family: "Monoton", sans-serif;
+  text-shadow: 5px 5px 1px rgba(8, 34, 67, 0.7),
+    8px 8px 4px rgba(254, 252, 1, 0.4);
+  /* rgb(254, 252, 1, 0.7); */
+  /* rgb(8, 34, 67) */
+}
+.countdown-container {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  margin: 0 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 8px black;
+}
+.countdown-label,
+.titulo-countdown {
+  text-shadow: 1px 1px 8px black;
+}
+.contador {
+  position: relative;
+  box-shadow: 0px 0px 10px 2px white;
+  width: 350px;
+  margin: 0 auto;
+  bottom: 40px;
+  right: 40px;
+}
+
+/* HERO */
+.hero {
+  background-image: url(../img/fondoCabecera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+.contenedor,
+.fases,
+.descanso,
+.acordeon,
+.footer,
+.hero,
+.informacion,
+.main {
+  position: relative;
+  z-index: 1; /* Ajusta según sea necesario */
+}
+.accordion {
+  width: 80%;
+}
+
+/* FASES */
+.text-gradient {
+  color: transparent;
+  background-image: linear-gradient(
+    to left,
+    #7d5bbb,
+    #ffffff,
+    #ffd700,
+    #ffffff,
+    #7d5bbb
+  );
+  background-clip: text;
+  animation: color 3.5s linear infinite;
+  background-size: 500%;
+}
+
+/* DESCANSO */
+.desayuno {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  transition: border-radius 2s, width 2s, height 2s;
+}
+
+.desayuno:hover {
+  border-radius: 25%;
+  height: 450px;
+  width: 450px;
+}
+.colaboracion:hover {
+  animation: bounce 1s;
+}
+
+/* INFORMMACION */
+
+.scene {
+  margin: 40px 0;
+  position: relative;
+  width: 210px;
+  height: 140px;
+  margin: 40px auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+.carousel__cell:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+.carousel__cell:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
+}
+@keyframes color {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
+}

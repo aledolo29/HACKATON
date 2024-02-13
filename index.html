@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/my_styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/hackaton.css" type="text/css" />
+    <link rel="stylesheet" href="css/font/bootstrap-icons.css" />
+    <link rel="shortcut icon" href="img/favicon-ayuntamiento-de-utrera.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Hackaton Intercentros Utrera</title>
+  </head>
+  <body class="position-relative">
+    <!-- BARRA NAVEGACIÓN -->
+    <nav class="barra navbar navbar-expand-xl bg-primary sticky-top">
+      <div class="container-fluid g-3">
+        <div class="d-flex mx-3">
+          <h1 class="navbar-brand fs-1 text-light" href="#">
+            HACKATON &nbsp;&nbsp;INTERCENTROS &nbsp;&nbsp;UTRERA
+          </h1>
+          <img
+            src="img/juntaAndalucia_s.jpg"
+            alt=""
+            class="img-fluid rounded-1 juntaAndalucia mx-2"
+          />
+        </div>
+        <button
+          class="navbar-toggler m-3 border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list text-white fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul
+            class="navbar-nav d-flex justify-content-evenly text-center container-xl"
+          >
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                aria-current="page"
+                href="#"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="#consiste"
+                >¿En qué consiste?</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="#fases"
+                >Fases</a
+              >
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="faqs.html"
+                >FAQS</a
+              >
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-link active text-light fw-bold button--opacity"
+                href="#informacion"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--HERO -->
+    <header class="container-fluid hero">
+      <h2 class="display-2 pt-5 text-warning fw-bold text-center titulo">
+        PÁGINA WEB HACKATON UTRERA 2024
+      </h2>
+      <div
+        class="contador text-white fw-bold p-4 rounded-5 position-absolute bg-warning"
+      >
+        <h2
+          class="fw-bold text-center text-uppercase display-5 titulo-countdown"
+        >
+          Cuenta atrás HACKATON
+          <i class="bi bi-stopwatch"></i>
+        </h2>
+        <div class="countdown-container">
+          <div id="days" class="countdown-item"></div>
+          <div class="fs-1">:</div>
+          <div id="hours" class="countdown-item"></div>
+          <div class="fs-1">:</div>
+          <div id="minutes" class="countdown-item"></div>
+          <div class="fs-1">:</div>
+          <div id="seconds" class="countdown-item"></div>
+          <br />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- EN QUE CONSISTE -->
+      <section id="consiste" class="contenedor container text-center mt-5">
+        <div class="bg-warning display-2 fw-bold rounded-top-5 p-3">
+          ¿EN QUE CONSISTE?
+        </div>
+        <div class="bg-white p-3 rounded-bottom-5">
+          A lo largo de una mañana intensa y diferente, el talento de los
+          jóvenes de Utrera de diferentes centros educativos resuelve un reto
+          que busca mejorar la competitividad de su localidad, considerando los
+          Objetivos de Desarrollo Sostenible (ODS).
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="img-fluid">
+              <img src="img/competition-two-color.svg" alt="competition" />
+            </figure>
+            <p class="text-white">
+              Tendrás que resolver un reto que se os revelará el mismo día del
+              evento. Hasta entonces es secreto.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <figure class="img-fluid">
+              <img src="img/team-work-two-color-cf083.svg" alt="team" />
+            </figure>
+            <p class="text-white">
+              Trabaja en equipo con participantes de otros centros educativos.
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <img
+              src="img/winners-two-color.svg"
+              class="img-fluid"
+              alt="winners"
+            />
+            <p class="text-white">
+              Si lograis ser los primeros en superarel reto, cada miembro del
+              grupo ganará un vale de 50€ para canjear en una papelería.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr class="position-relative z-1 text-white" />
+      <!-- FASES -->
+      <section id="fases" class="fases container text-center">
+        <div class="bg-warning display-2 fw-bold rounded-5 p-3">FASES</div>
+        <div class="row">
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center mt-5"
+            data-aos="flip-left"
+          >
+            <img
+              src="img/undraw_blog_post_re_fy5x.svg"
+              alt="post"
+              class="img-fluid w-50"
+            />
+            <h2 class="mt-5 text-gradient fs-2 fw-bold">
+              1. Lanzamiento del reto
+            </h2>
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center align-items-center"
+            data-aos="flip-right"
+          >
+            <img
+              src="img/brainstorming-two-color.svg"
+              alt="idea"
+              class="img-fluid w-75"
+            />
+            <h2 class="mt-3 text-gradient fs-2 fw-bold">
+              2. Ideación sobre el reto
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center mt-5"
+            data-aos="flip-left"
+          >
+            <img
+              src="img/undraw_prototyping_process_re_7a6p.svg"
+              alt="post"
+              class="img-fluid w-50"
+            />
+            <h2 class="mt-3 text-gradient fs-2 fw-bold">3. Prototipar</h2>
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center mt-5"
+            data-aos="flip-right"
+          >
+            <img
+              src="img/undraw_solution_mindset_re_57bf.svg"
+              alt="idea"
+              class="img-fluid w-50"
+            />
+            <h2 class="mt-5 text-gradient fs-2 fw-bold">
+              4. Preparar la presentación
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center mt-5"
+            data-aos="flip-left"
+          >
+            <img
+              src="img/undraw_heatmap_uyye.svg"
+              alt="prototype"
+              class="img-fluid w-50"
+            />
+            <h2 class="mt-5 text-gradient fs-2 fw-bold">
+              5. Presentación de vuestra solución al reto
+            </h2>
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center mt-3"
+            data-aos="flip-right"
+          >
+            <img
+              src="img/undraw_voting_nvu7.svg"
+              alt="post"
+              class="img-fluid w-50"
+            />
+            <h2 class="mt-1 text-gradient fs-2 fw-bold">
+              6. Elección de los ganadores
+            </h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center mt-5"
+            data-aos="flip-up"
+          >
+            <img
+              src="img/winners-isometric.svg"
+              alt="post"
+              class="img-fluid w-75"
+            />
+            <h2 class="mt-5 text-gradient fs-2 fw-bold">
+              7. Entrega de premios
+            </h2>
+          </div>
+        </div>
+      </section>
+      <hr class="position-relative z-1 text-white" />
+      <!-- DESCANSO -->
+      <section class="descanso container text-center">
+        <div class="bg-warning display-2 fw-bold rounded-top-5 p-3">
+          DESCANSO
+        </div>
+        <div class="bg-white p-3 rounded-bottom-5">
+          Para descansar y hacer un break a lo largo de la mañana disfrutaremos
+          de buffete de desayuno y café por cortesía de los colaboradores
+          Confitería Diego Vázquez y Cafés Mocaibo
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src="img/desayuno1.jpg"
+              alt="desayuno"
+              class="img-fluid desayuno"
+            />
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="circulo">
+              <img
+                src="img/desayuno3.jpg"
+                alt="desayuno"
+                class="img-fluid desayuno"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center align-items-center">
+          <div class="col-md-3">
+            <img
+              src="img/COLABORAN_MOCAIBO_2-removebg-preview.png"
+              alt="MOCAIBO"
+              class="img-fluid colaboracion"
+            />
+          </div>
+          <div class="col-md-6">
+            <img
+              src="img/desayuno2.jpg"
+              alt="desayuno"
+              class="img-fluid desayuno"
+            />
+          </div>
+          <div class="col-md-3">
+            <img
+              src="img/COLABORAN_DIEGO_1-removebg-preview.png"
+              alt="DIEGO"
+              class="img-fluid colaboracion"
+            />
+          </div>
+        </div>
+      </section>
+      <hr class="position-relative z-1 text-white" />
+
+      <!-- INFORMACIÓN -->
+      <section id="informacion" class="informacion container text-center mb-4">
+        <div class="bg-warning display-2 fw-bold rounded-5 p-3">
+          INFORMACIÓN
+        </div>
+        <div class="m-5 text-start">
+          <div class="bg-white w-50 m-auto d-flex flex-column rounded-4 p-5">
+            <h3 class="fw-bold display-4 text-center">Datos:</h3>
+            <p>
+              <strong>Lugar de Celebración:</strong> Biblioteca Municipal de
+              Utrera C. Álvarez Quintero, 39, 41710 Utrera, Sevilla
+            </p>
+            <p><strong>Horario: De 08.30 a 15.00 h.</strong></p>
+          </div>
+        </div>
+        <div class="scene">
+          <div class="carousel">
+            <div class="carousel__cell">
+              <img
+                src="img/IMG_20220216_124736_s_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG_20220216_102154_s_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG-20230419-WA0041_s_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG-20230419-WA0049_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG-20230419-WA0062_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG_20220216_102204_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG_20220216_184923_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG_20220216_125205_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+            <div class="carousel__cell">
+              <img
+                src="img/IMG_20220216_193941_s_s.jpg"
+                alt="imagen"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center">
+          <button class="previous-button rounded 3 bg-warning border-warning">
+            Anterior
+          </button>
+          <button class="next-button rounded-3 bg-warning border-warning">
+            Siguiente
+          </button>
+        </p>
+        <a
+          class="py-3 px-5 rounded-4 d-inline-block text-decoration-none bg-warning text-black"
+          href="galeria.html"
+          >Ver galería completa</a
+        >
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container-fluid bg-white">
+        <div class="row d-flex justify-content-center p-3">
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <img src="img/inicia.webp" alt="inicia" class="img-fluid w-50" />
+          </div>
+        </div>
+        <hr class="text-black" />
+        <div class="row p-3">
+          <h3 class="fw-bold display-3 text-center text-black">
+            Organización y Gestión:
+          </h3>
+          <div
+            class="col-md-3 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="img/Logo Nueva Consejeria CADE.jpg"
+              alt="junta"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-md-3 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="img/ORGANIZAN AYTO 1.jpeg"
+              alt="junta"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-md-3 d-flex justify-content-center align-items-center"
+          >
+            <img src="img/ORGANIZAN IES 3.jpg" alt="junta" class="img-fluid" />
+          </div>
+          <div
+            class="col-md-3 d-flex justify-content-center align-items-center"
+          >
+            <img src="img/GESTIONAN CADE 1.jpg" alt="junta" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row m-3 p-3">
+          <div
+            class="col-md-7 d-flex justify-content-center align-items-center"
+          >
+            <h3 class="fw-bold display-3 text-center text-black">
+              Participantes:
+            </h3>
+          </div>
+          <div
+            class="col-md-5 d-flex justify-content-center align-items-center"
+          >
+            <h3
+              class="fw-bold display-3 text-center text-black d-none d-md-inline-block"
+            >
+              Colaboran:
+            </h3>
+          </div>
+        </div>
+        <div class="row p-3">
+          <div class="col-6 col-md-2">
+            <img
+              src="img/LOGO PONCE ORGANIZA.png"
+              alt="ponce"
+              class="img-fluid w-50"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="img/SMX_Utrera.png"
+              alt="salesianos"
+              class="img-fluid w-75"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img src="img/ruiz.png" alt="ruiz" class="img-fluid w-75" />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="img/virgen_consolacion.png"
+              alt="virgen_consolacion"
+              class="img-fluid w-50"
+            />
+          </div>
+          <h3
+            class="fw-bold display-3 text-center text-black d-md-none d-inline-block"
+          >
+            Colaboran:
+          </h3>
+
+          <div class="col-6 col-md-2">
+            <img
+              src="img/COLABORAN_DIEGO_1-removebg-preview.png"
+              alt="DIEGO"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="img/COLABORAN_MOCAIBO_2-removebg-preview.png"
+              alt="MOCAIBO"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-white bg-primary p-4 z-1 position-relative">
+        <h3 class="fs-2 p-0">
+          Web realizada por alumnado del CFGS "DAW" del IES Ruiz Gijón. 2024
+        </h3>
+      </div>
+    </footer>
+    <!-- fondo estrellas -->
+    <div class="diagonal-hero-bg">
+      <div class="stars">
+        <div class="small"></div>
+        <div class="medium"></div>
+        <div class="big"></div>
+      </div>
+    </div>
+    <script src="js/funciones.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
