@@ -31,6 +31,7 @@
 
     // Realiza alguna acción cuando se alcance la fecha
     if (distance < 0) {
+      clearInterval(x);
       document.getElementById("headline").innerText =
         "¡La cuenta atrás ha terminado!";
       document.getElementById("countdown").style.display = "none";
